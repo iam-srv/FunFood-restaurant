@@ -16,6 +16,8 @@
   
 //   getMenu();
   
+// here I have hard coded the api data because it was showing some error like 404 and cound't fetch  data etc..
+
   let obj = 
     [
         {
