@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./syle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;600;700;800;900&family=Raleway:ital,wght@0,600;0,700;0,800;1,100;1,200;1,300&display=swap"
+        rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+</head>
+
+<body>
+
+    <!-- header section-->
+
+    <header class="sticky">
+        <a href="#" class="logo">Food <span>Fun</span> </a>
+
+        <ul class="navbar">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+
+        <div class="h-icons">
+            <a href="#"><i class='bx bx-search'></i></a>
+            <a href="#"><i class='bx bx-cart'></i></a>
+
+            <div class="bx bx-menu" id="menu-icon"></div>
+
+        </div>
+    </header>
+
+    <!-- home section -->
+
+    <section class="home" id="home">
+        <div class="home-text">
+            <h1><span>Welcome</span> to The world of Tasty & Fresh Food</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos, pariatur!</p>
+            <a href="#container-box" class="btn">View Today's Menu</a>
+        </div>
+
+        <div class="home-img">
+            <img src="./home-img2.jpg" alt="">
+        </div>
+    </section>
+
+    <!-- container section -->
+    <section class="container">
+        <div class="buttons">
+            <div><button onclick="randomBurgers()">Get Random Burgers</button></div>
+            <div><button onclick="placeOrder()">Place Order</button></div>
+        </div>
+        
+        <div class="main-text">
+            <h2>TODAY's MENU</h2>
+        </div>
+        
+        <div class="container-box" id="container-box">
+            <!-- <div class="c-mainbx">
+                <div class="container-img">
+                    <img src="https://source.unsplash.com/random/1920x1080/?falafel" alt="">
+                </div>
+                <div class="container-text">
+                    <p>Tasty & Fresh Food</p>
+                     <b>20$</b>
+                </div> -->
+        </div>
+        </div>
+    </section>
+
+    
+    <div class="model-container">
+        <div class="model">
+            <i class='bx bxs-heart'></i>
+            <h3>Order status</h3>
+            <p id="status"></p>
+            <button id="pay-button" onclick="payment()"></button>
+            <button id="cancel" onclick="closePopup()" ondblclick=" thankyouFnc()">cancel</button>
+            <i class='bx bx-x' onclick="closePopup()"></i>
+        </div>
+
+    </div>
+    <script src="./script.js">
+      
+    </script>
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+</body>
+
+</html>
